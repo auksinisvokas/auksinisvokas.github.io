@@ -1,0 +1,1042 @@
+<!doctype html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Rūta &amp; Žygimantas &#183; Krabi &#183; pavyzdys</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Allura&family=Outfit:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=La+Belle+Aurore&display=swap">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Pavyzdinis Auksinio voko kvietimas: tropikų pasas į vestuves Tailande. Atverkite voką.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rūta &amp; Žygimantas &#183; Krabi &#183; pavyzdys">
+<meta property="og:description" content="Pavyzdinis Auksinio voko kvietimas: tropikų pasas į vestuves Tailande. Atverkite voką.">
+<meta property="og:url" content="https://auksinisvokas.github.io/tropikai/">
+<meta property="og:image" content="https://auksinisvokas.github.io/tropikai/img/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<script>window.AV_RSVP = { url: 'https://script.google.com/macros/s/AKfycbx8E8rqebvrfaOMeQqzXBrNHDs-hzG-5mdHmBY6-LtCtzly_gPLIs4QQbd_2xfW-m-NBA/exec', event: 'demo-tropikai' };</script><style>
+:root{--liner:url("img/liner.jpg")}
+/* Tropikų pasas: palms passport invitation (Thailand). Built on the Tuscany engine, own look.
+   Concept: a flat lay on a greige stone desk. Dusty-blue handmade envelope with a copper coin seal, a blue linen passport tied with gold twine,
+   a boarding pass, a brass magnifier and a watercolour beach postcard. Gold foil on dusty blue. (The --sage-* names are kept; they hold blues here.)
+   Layout: one phone-width column. The opening scene is sized in em so it scales as one object. */
+:root{
+  --stone-1:#d7d2c8; --stone-2:#c3beb3; --stone-3:#b1aca1;
+  --sage-1:#9facb9; --sage-2:#8593a2; --sage-3:#707f8e; --sage-4:#576676;
+  --olive:#2e3c4b; --cypress:#324151;
+  --paper:#fbf9f3; --paper-2:#f2eee3; --ink:#232a31; --muted:#555c63; --line:#d8d1bf;
+  --gold-1:#8a6420; --gold-2:#c9a24e; --gold-3:#f3e2ac; --gold-4:#a87d2c;
+  --terra:#b9633f; --stamp:#9c3a2f; --ok:#3d556d; --board:#1c2229;
+  --display:"Gilda Display",Georgia,"Times New Roman",serif;
+  --script:"Allura","Snell Roundhand","Segoe Script",cursive;
+  --body:"Outfit","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --hand:"La Belle Aurore","Segoe Script","Bradley Hand",cursive;
+  --wrapw:min(100vw - 32px,408px);
+  --foil:linear-gradient(112deg,#8a6420 0%,#c9a24e 16%,#f6e7b4 32%,#b98a35 48%,#e8cb7c 64%,#a87d2c 82%,#8a6420 100%);
+  --desk-grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .18 0 0 0 0 .19 0 0 0 0 .16 0 0 0 .2 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --desk-mottle:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='900'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.007 .011' numOctaves='3' seed='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .31 0 0 0 0 .27 0 0 0 .34 -.06'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23m)'/%3E%3C/svg%3E");
+  --paper-grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .3 0 0 0 0 .2 0 0 0 .08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --cloth-grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75 .9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .1 0 0 0 0 .16 0 0 0 0 .08 0 0 0 .34 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  /* generated art (Lina's Higgsfield set, 14 Oct), baked in by build.ps1 */
+  --desk:url("img/desk.jpg"); --cover:url("img/cover.jpg"); --envpaper:url("img/envpaper.jpg"); --foiltex:url("img/foil.jpg");
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;min-height:100%}
+body{
+  margin:0;padding-inline:16px;padding-block:18px 120px;min-height:100%;
+  color:var(--ink);font:400 16px/1.55 var(--body);
+  background-color:var(--stone-2);
+}
+/* the stone desk: a fixed layer so the photo never stretches with the page */
+body::after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(90% 38% at 14% 0%,rgba(255,255,255,.34),transparent 72%),radial-gradient(48% 28% at 88% 84%,rgba(47,55,63,.12),transparent 72%),linear-gradient(172deg,rgba(255,255,255,.08),rgba(60,58,50,.1)),var(--desk) center/cover,var(--stone-2)}
+body.gated{overflow:hidden;height:100%}
+b,strong{font-weight:600}
+p{margin:0}
+h1,h2,h3{margin:0;font-weight:400}
+.wrap{width:100%;max-width:var(--wrapw);margin-inline:auto;display:grid;gap:30px}
+.demo-tag{font:500 12px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#4c535b;text-align:center;margin-bottom:10px}
+
+/* ---------- gold foil ---------- */
+.foil{background-image:var(--foiltex),var(--foil);background-size:9em auto,230% 100%;background-blend-mode:soft-light;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine-tex 7s ease-in-out infinite;filter:drop-shadow(0 .055em 0 rgba(38,26,5,.62)) drop-shadow(0 -.02em 0 rgba(255,246,208,.5))}
+@keyframes shine{0%,100%{background-position:100% 0}50%{background-position:0 0}}
+@keyframes shine-tex{0%,100%{background-position:center,100% 0}50%{background-position:center,0 0}}
+
+/* ---------- the opening scene (everything in em) ---------- */
+.stage{position:relative;width:39em;max-width:100%;height:61em;margin-inline:auto;font-size:calc(var(--wrapw)/39);-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none}
+.stage > *{position:absolute}
+.hero{left:0;right:0;top:1.2em;text-align:center;display:grid;gap:.9em;justify-items:center;transition:opacity .7s,transform .9s}
+.eyebrow{font:400 1.45em/1.2 var(--display);letter-spacing:.3em;text-transform:uppercase;color:var(--olive);padding-left:.3em}
+.names{font:400 5.9em/1.02 var(--script);color:var(--olive);padding:.02em .1em;text-wrap:balance}
+.dateline{font:500 1.7em/1.3 var(--body);letter-spacing:.03em;color:#333c45}
+.rule{width:9em;height:.9em;color:var(--gold-4)}
+.stage.flapOpen .hero{opacity:0;transform:translateY(-1.5em);pointer-events:none}
+
+.prompt{left:0;right:0;top:45.4em;text-align:center;transition:opacity .5s,visibility 0s}
+.prompt.off{visibility:hidden;transition:opacity .5s,visibility 0s .5s}
+.pt{display:block;font:500 1.55em/1.3 var(--body);letter-spacing:.06em;color:var(--olive)}
+.prompt::after{content:"";display:block;width:.5em;height:.5em;margin:.7em auto 0;border-radius:50%;background:var(--gold-4);animation:ping 2s ease-out infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(168,125,44,.55)}100%{box-shadow:0 0 0 1.4em rgba(168,125,44,0)}}
+.prompt.off{opacity:0}
+
+/* props */
+.lens{left:24.4em;top:49.2em;width:14em;height:10.5em;transform:rotate(-8deg);filter:drop-shadow(0 .6em .9em rgba(40,42,30,.38))}
+.decor-seal{width:5.6em;height:5.6em;filter:drop-shadow(0 .35em .5em rgba(40,42,30,.35))}
+.decor-seal.gold{left:2.6em;top:50.6em;transform:rotate(-12deg)}
+.decor-seal.mint{left:9.6em;top:54.2em;width:4.6em;height:4.6em;transform:rotate(8deg)}
+.dist{left:11.6em;top:52.6em;width:12.2em;text-align:right;transition:opacity .8s}
+.dist span{display:block;font:500 1.12em/1.45 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#495058}
+
+/* envelope */
+.ep{transition:transform 1.05s cubic-bezier(.5,0,.2,1),opacity .8s .1s}
+.stage.focus .ep{transform:translateY(34em);opacity:0}
+.stage.focus .bpass{opacity:0;transition:opacity .5s,transform 1s}
+.stage{transition:height 1.2s cubic-bezier(.5,0,.2,1)}
+.stage.opened{height:53.4em}
+.stage.focus .lens,.stage.focus .decor-seal,.stage.focus .dist{opacity:0;transition:opacity .9s .3s}
+.env-back{left:3.5em;top:21em;width:32em;height:22.4em;border-radius:.25em;z-index:1;
+  background:linear-gradient(180deg,rgba(25,34,43,.34) 0%,rgba(25,34,43,.14) 55%,rgba(25,34,43,.22) 100%),var(--envpaper) center/cover,#71808f;
+  box-shadow:0 1.6em 2.6em rgba(33,41,49,.34),0 .3em .8em rgba(33,41,49,.28)}
+.items{left:3.5em;top:21em;width:32em;height:22.4em;z-index:2;clip-path:inset(-70em -4em .12em -4em)}
+.items > *{position:absolute}
+.env-back,.pocket-wrap,.flap-wrap,.items,.bpass,.hero,.dist{pointer-events:none}
+.passport{pointer-events:auto}
+.stage.focus .items{clip-path:none}
+.pocket-wrap{left:3.5em;top:21em;width:32em;height:22.4em;z-index:4;filter:drop-shadow(0 -.25em .55em rgba(33,41,49,.34))}
+.pocket{position:relative;display:block;width:100%;height:100%}
+.pocket-paper,.flap-paper{position:absolute;inset:0;background:var(--envpaper) center/cover,#8a99a8}
+.pocket-paper{clip-path:polygon(0 100%,0 0,50% 60.71%,100% 0,100% 100%)}
+.flap-paper{clip-path:polygon(0 0,100% 0,50% 100%);background:linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,0)),var(--envpaper) 30% 20%/cover,#9facba}
+.flap-wrap{left:3.5em;top:21em;width:32em;height:13.9em;z-index:6;perspective:70em;filter:drop-shadow(0 .25em .4em rgba(27,34,41,.26));transition:opacity .8s .1s,transform 1.05s cubic-bezier(.5,0,.2,1)}
+.stage.flapOpen .flap-wrap{z-index:1;transition:opacity .8s .1s,transform 1.05s cubic-bezier(.5,0,.2,1),z-index 0s .55s}
+.stage.focus .flap-wrap{transform:translateY(34em);opacity:0}
+.flap{position:absolute;inset:0;transform-origin:50% 0;transform-style:preserve-3d;transition:transform 1.1s cubic-bezier(.45,.05,.2,1)}
+.stage.flapOpen .flap{transform:rotateX(180deg)}
+.flap-out,.flap-in{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.flap-out{filter:drop-shadow(0 .5em .6em rgba(27,34,41,.32))}
+.flap-out svg{position:relative;display:block;width:100%;height:100%}
+.flap-in{transform:rotateX(180deg);clip-path:polygon(0 100%,100% 100%,50% 0);
+  background-color:#f6f1e4;background-image:linear-gradient(0deg,rgba(49,60,71,.22),transparent 38%),var(--liner);background-size:100% 100%,cover;background-position:center,50% 60%}
+
+/* wax seal on the flap tip */
+.seal{left:15.9em;top:31.2em;width:7.2em;height:7.2em;z-index:8;padding:0;border:0;background:none;cursor:pointer;touch-action:manipulation;transition:opacity .5s;font:inherit;color:inherit}
+.seal svg{position:absolute;inset:0;width:100%;height:100%;filter:drop-shadow(0 .35em .5em rgba(40,30,10,.5))}
+.seal::before{content:"";position:absolute;inset:-1.1em;border-radius:50%;border:.15em solid rgba(168,125,44,.65);animation:ring 2.2s ease-out infinite}
+@keyframes ring{0%{transform:scale(.72);opacity:.9}100%{transform:scale(1.25);opacity:0}}
+.seal:focus-visible{outline:.25em solid var(--gold-4);outline-offset:.4em;border-radius:50%}
+.seal .half{position:absolute;inset:0;transition:transform .65s cubic-bezier(.3,.9,.4,1),opacity .55s}
+.seal .half.l{transform-origin:50% 50%}
+.seal .half.r{display:none}
+.stage.cracked .seal::before{display:none}
+.stage.cracked .seal .half.l{animation:coinflip .95s cubic-bezier(.3,.7,.4,1) forwards}
+@keyframes coinflip{0%{transform:none;opacity:1}35%{transform:translateY(-4.2em) rotateY(540deg) scale(1.08);opacity:1}100%{transform:translate(9.5em,13em) rotateY(1080deg) scale(.62);opacity:0}}
+
+.stage.cracked .seal{pointer-events:none}
+.crumb{position:absolute;left:50%;top:50%;width:.55em;height:.55em;margin:-.27em;border-radius:50%;background:#fff4cf;box-shadow:0 0 .5em .15em rgba(255,226,150,.9);opacity:0}
+.stage.cracked .crumb{animation:crumb .8s cubic-bezier(.2,.8,.3,1) forwards}
+@keyframes crumb{0%{opacity:1;transform:translate(0,0)}100%{opacity:0;transform:translate(var(--dx),var(--dy)) rotate(200deg)}}
+
+/* boarding pass peeking out of the envelope */
+.bpass{left:11.5em;top:0;width:25em;height:9.4em;border-radius:.5em;overflow:hidden;transform:translate(-5.6em,17em) rotate(9deg);transition:transform 1s cubic-bezier(.3,.9,.3,1) .15s;
+  background:var(--paper-grain),linear-gradient(#fff,#f3efe4);box-shadow:0 .5em 1em rgba(29,37,46,.3);display:grid;grid-template-columns:3.4em 1fr}
+.stage.flapOpen .bpass{transform:translate(0,-.8em) rotate(7deg)}
+.bpass .cap{background:var(--foil);display:grid;place-items:center}
+.bpass .cap span{writing-mode:vertical-rl;transform:rotate(180deg);font:400 1.15em var(--display);letter-spacing:.3em;color:#3a2a0c}
+.bpass .main{padding:.9em 1.1em;display:grid;gap:.4em;align-content:start}
+.bpass .main b{font:400 1.7em/1 var(--display);letter-spacing:.12em;color:var(--olive)}
+.bpass .main i{font:400 1em/1.2 var(--mono);color:#676e75;font-style:normal;letter-spacing:.06em}
+.bars{height:2.4em;margin-top:.4em;background:repeating-linear-gradient(90deg,#252c33 0 .12em,transparent .12em .26em,#252c33 .26em .5em,transparent .5em .62em,#252c33 .62em .7em,transparent .7em .95em)}
+
+/* the passport */
+.passport{left:4em;top:0;width:24em;height:33.6em;perspective:80em;transform:translate(0,17em) rotate(-.6deg);transform-origin:0 0;
+  transition:transform .95s cubic-bezier(.3,.9,.3,1);cursor:default;outline:none}
+.stage.flapOpen .passport{transform:translate(0,-3.4em) rotate(-1.2deg);cursor:pointer}
+.stage.focus .passport{transform:translate(-3.3em,-16em) rotate(0) scale(1.28);transition:transform 1.05s cubic-bezier(.5,0,.2,1) .15s}
+.passport:focus-visible{outline:.3em solid var(--gold-4);outline-offset:.5em;border-radius:.6em}
+.page-id,.cover{position:absolute;inset:0}
+.page-id{border-radius:.35em .9em .9em .35em;overflow:hidden;color:var(--ink);padding:1.7em 1.8em 1.6em 2.2em;display:grid;grid-template-rows:auto auto 1fr auto;gap:1em;
+  background:var(--paper-grain),linear-gradient(160deg,#fbf9f3,#efeadc);box-shadow:.12em .12em 0 #f1ecdc,.24em .24em 0 #e7e0ca,.36em .36em 0 #ddd4bb,0 1.4em 2.4em rgba(29,37,46,.34),0 .3em .8em rgba(29,37,46,.28)}
+.page-id::before{content:"";position:absolute;inset:.55em;border:.08em solid rgba(168,125,44,.5);border-radius:.25em .7em .7em .25em;pointer-events:none}
+.page-id::after{content:"";position:absolute;left:0;top:0;bottom:0;width:1.6em;background:linear-gradient(90deg,rgba(34,42,51,.22),transparent)}
+.pi-head{display:flex;justify-content:space-between;font:500 .95em/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#5a6168}
+.pi-title{font:400 1.7em/1.15 var(--display);color:var(--olive);text-wrap:balance}
+.pi-body{display:grid;grid-template-columns:6.6em 1fr;gap:1.2em;align-items:start}
+.photo{position:relative;width:6.6em;height:8.6em;border-radius:50%;overflow:hidden;background:radial-gradient(circle at 40% 30%,#d5dee7,#acb9c6);box-shadow:inset 0 0 0 .15em rgba(168,125,44,.7),0 .2em .5em rgba(34,42,51,.25);display:grid;place-items:center}
+.photo svg{width:78%;height:78%}
+.pi-data{margin:0;display:grid;gap:.75em}
+.pi-data div{display:grid;gap:.1em}
+.pi-data dt{font:500 .95em/1.1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#676e75}
+.pi-data dd{margin:0;font:500 1.2em/1.2 var(--body);color:var(--ink)}
+.mrz{margin:0;font:400 .78em/1.55 var(--mono);letter-spacing:.02em;color:#6a6f74;white-space:pre;overflow:hidden;background:rgba(255,255,255,.55);padding:.6em .7em;border-radius:.3em}
+.pi-stamp{position:absolute;right:1.1em;bottom:5.6em;width:7.4em;height:7.4em;color:var(--terra);opacity:.5;transform:rotate(-14deg)}
+
+.cover{transform-origin:0 50%;transform-style:preserve-3d;transition:transform 1.35s cubic-bezier(.55,.05,.25,1)}
+.passport.open .cover{transform:rotateY(-178deg)}
+.passport.gone .cover{visibility:hidden}
+.cover-front,.cover-back{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:.35em .9em .9em .35em}
+.cover-front{display:flex;flex-direction:column;align-items:center;text-align:center;padding:2.3em 1.6em 1.7em 2.3em;overflow:hidden;
+  background-color:var(--sage-3);
+  background-image:radial-gradient(120% 90% at 28% 8%,rgba(221,232,243,.26) 0%,rgba(221,232,243,0) 45%,rgba(13,22,31,.34) 100%),var(--cover);background-size:auto,cover;background-position:center;
+  box-shadow:inset 1.1em 0 1.3em -.9em rgba(17,25,33,.62),inset -.15em 0 .35em rgba(255,255,255,.14),0 1.4em 2.4em rgba(25,34,43,.4),0 .3em .8em rgba(25,34,43,.3)}
+.cover-front::before{content:"";position:absolute;inset:.7em .7em .7em 1.2em;border:.09em solid rgba(240,222,160,.5);border-radius:.2em .7em .7em .2em;pointer-events:none}
+.cover-front::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(105deg,transparent 36%,rgba(255,255,255,.2) 50%,transparent 64%);background-size:260% 100%;background-position:130% 0;animation:sweep 6s ease-in-out 1.2s infinite}
+@keyframes sweep{0%{background-position:130% 0}45%,100%{background-position:-130% 0}}
+.cover-back{transform:rotateY(180deg);background-color:var(--sage-3);background-image:linear-gradient(120deg,rgba(255,255,255,.06),rgba(13,22,31,.22)),var(--cover);background-size:auto,cover;box-shadow:inset -1.1em 0 1.3em -.9em rgba(17,25,33,.6)}
+.c-top{font:400 3.6em/1 var(--display);letter-spacing:.3em;padding-left:.3em;margin-top:.1em}
+.emblem{width:9.2em;height:9.2em;margin-top:1.2em}
+.c-names{font:400 3.2em/1.06 var(--script);margin-top:.5em;padding:.05em .15em;text-wrap:balance}
+.c-date{font:400 1.25em/1 var(--display);letter-spacing:.32em;margin-top:.6em;padding-left:.32em}
+.twine{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.twine .cord{fill:none;stroke-linecap:round;stroke-dasharray:130 130;transition:stroke-dashoffset .75s cubic-bezier(.5,0,.3,1)}
+.passport.untied .twine .cord.l{stroke-dashoffset:-130}
+.passport.untied .twine .cord.r{stroke-dashoffset:-130}
+.twine .knot{transform-box:fill-box;transform-origin:center;transition:transform .6s,opacity .5s}
+.passport.untied .twine .knot{transform:scale(.2);opacity:0}
+.twine .charm{transform-box:fill-box;transform-origin:50% 0;transition:transform 1s cubic-bezier(.4,0,.2,1),opacity .9s .1s}
+.passport.untied .twine .charm{transform:translate(70px,-150px) rotate(70deg) scale(1.1);opacity:0}
+.twine .charm{animation:swing 3.2s ease-in-out infinite}
+.passport.untied .twine .charm{animation:none}
+@keyframes swing{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+
+.scroll-hint{left:0;right:0;top:50.6em;text-align:center;opacity:0;pointer-events:none;transition:opacity .8s 1.2s}
+.stage.opened .scroll-hint{opacity:1}
+.scroll-hint::after{content:"";display:block;width:.9em;height:.9em;margin:.6em auto 0;border-right:.16em solid var(--gold-4);border-bottom:.16em solid var(--gold-4);transform:rotate(45deg);animation:nudge 1.8s ease-in-out infinite}
+@keyframes nudge{0%,100%{transform:translateY(0) rotate(45deg)}50%{transform:translateY(.5em) rotate(45deg)}}
+
+.needle{transform-origin:60px 60px;transform:rotate(237deg);animation:wob 5s ease-in-out infinite}
+@keyframes wob{0%,100%{transform:rotate(229deg)}50%{transform:rotate(245deg)}}
+
+/* ---------- music button ---------- */
+.music{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;align-items:center;gap:8px;min-height:44px;background:var(--paper);color:var(--ink);border:1px solid var(--gold-4);border-radius:99px;padding:8px 16px 8px 12px;font:500 14px var(--body);box-shadow:0 8px 20px rgba(34,42,51,.3);cursor:pointer}
+.music:focus-visible{outline:2px solid var(--gold-4);outline-offset:2px}
+.eq{display:flex;gap:2px;align-items:end;height:14px}
+.eq i{width:3px;height:4px;background:var(--gold-4);border-radius:1px}
+.music.playing .eq i{animation:eq .9s ease-in-out infinite alternate}
+.music.playing .eq i:nth-child(2){animation-delay:.3s}.music.playing .eq i:nth-child(3){animation-delay:.6s}
+@keyframes eq{to{height:14px}}
+
+/* ---------- the journey: pages on the desk ---------- */
+.journey{display:grid;gap:30px;animation:rise .9s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.card{position:relative;background:var(--paper-grain),linear-gradient(var(--paper),var(--paper-2));border-radius:3px;padding:28px 24px;display:grid;gap:16px;overflow:hidden;
+  box-shadow:0 18px 34px rgba(43,50,57,.22),0 2px 6px rgba(43,50,57,.18)}
+.card::before{content:"";position:absolute;inset:7px;border:1px solid rgba(168,125,44,.45);border-radius:1px;pointer-events:none}
+.card > *{position:relative}
+.guil{position:absolute!important;right:-70px;top:-70px;width:230px;height:230px;color:var(--gold-4);opacity:.34;pointer-events:none}
+.label{display:flex;justify-content:space-between;gap:12px;font:500 12px/1.2 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#555c63}
+.label.dark{color:#464e55;padding-inline:4px}
+.label-mono{font:500 12px/1.2 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:#555c63}
+.h2{font:400 28px/1.15 var(--display);color:var(--olive);text-wrap:balance}
+.lead{font-size:16px;color:#323a43}
+.hint{font-size:14px;color:#596067}
+.hint.dark{text-align:center;color:#3e464e}
+.note{font-size:13px;color:#596067}
+.sel{user-select:all}
+
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 20px;border-radius:99px;font:500 15px/1 var(--body);letter-spacing:.03em;text-decoration:none;cursor:pointer;border:1px solid var(--gold-4);color:var(--olive);background:rgba(255,255,255,.55)}
+.btn:focus-visible{outline:2px solid var(--gold-4);outline-offset:2px}
+.btn.foil{background:var(--foil);background-size:230% 100%;-webkit-background-clip:border-box;background-clip:border-box;color:#2b2210;border-color:#8a6420;filter:none;animation:shine 7s ease-in-out infinite;box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 6px 14px rgba(120,90,30,.28)}
+
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}
+.count b{display:block;font:400 38px/1.1 var(--display);font-variant-numeric:tabular-nums;color:var(--olive)}
+.count span{font:500 12px/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#555c63}
+
+/* departures board */
+.board{position:relative;background:linear-gradient(180deg,#212931,var(--board));color:#efe6cf;border-radius:6px;padding:22px 18px 8px;box-shadow:0 18px 34px rgba(30,35,40,.34),0 2px 6px rgba(30,35,40,.3),inset 0 0 0 1px rgba(233,207,142,.18)}
+.board::before,.board::after{content:"";position:absolute;top:10px;width:7px;height:7px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f3e2ac,#8a6420);box-shadow:0 1px 1px rgba(0,0,0,.5)}
+.board::before{left:10px}.board::after{right:10px}
+.b-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;padding-bottom:14px}
+.b-head h2{font:400 17px/1.2 var(--display);letter-spacing:.3em;text-transform:uppercase;color:#ecd48d}
+.b-head span{font:500 12px/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#b8b08f}
+.brow{display:grid;grid-template-columns:1fr auto;gap:10px 12px;align-items:center;padding:15px 0;border-top:1px solid rgba(233,207,142,.2)}
+.brow .t{grid-column:1;grid-row:1}
+.brow .gate{grid-column:2;grid-row:1}
+.brow .e{grid-column:1/-1;grid-row:2}
+.brow .where{grid-column:1/-1;grid-row:3;font-size:15px;color:#cfc6a6;padding-left:1px}
+.cells{display:flex;gap:2px;min-width:0}
+.cells.t{font:500 19px/1 var(--mono);letter-spacing:.04em;color:#f6ecd0}
+.cells.e{font:500 15px/1 var(--mono);color:#f0e6c8;flex-wrap:wrap}
+.cell{width:17px;height:27px;background:linear-gradient(#303840,#22282f);border-radius:2px;display:grid;place-items:center;font:500 18px/1 var(--mono);color:#f6ecd0;position:relative;box-shadow:inset 0 -1px 0 rgba(0,0,0,.55)}
+.cell::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(0,0,0,.6)}
+.cell.blank{background:none;box-shadow:none;width:9px}.cell.blank::after{display:none}
+.cell.punct{background:none;box-shadow:none;width:9px}.cell.punct::after{display:none}
+.cell.flip{animation:flipc .09s ease-out}
+@keyframes flipc{0%{transform:scaleY(.15)}100%{transform:scaleY(1)}}
+.gate{font:500 12px/1 var(--mono);letter-spacing:.12em;color:#1c2229;background:linear-gradient(115deg,#c9a24e,#f0dca0,#b98a35);border-radius:3px;padding:6px 8px}
+
+/* postcard */
+.pc-sec{display:grid;gap:14px;justify-items:stretch}
+.postcard{position:relative;display:block;width:100%;padding:0;border:0;background:none;font:inherit;color:inherit;cursor:pointer;perspective:1500px;transform:rotate(-1.4deg);-webkit-tap-highlight-color:transparent}
+.postcard:focus-visible{outline:2px solid var(--gold-4);outline-offset:6px}
+.pc-inner{position:relative;display:block;width:100%;aspect-ratio:10/7.3;transform-style:preserve-3d;transition:transform .95s cubic-bezier(.4,.1,.2,1)}
+.postcard[aria-pressed="true"] .pc-inner{transform:rotateY(180deg)}
+.pc-face{position:absolute;inset:0;display:block;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:3px;overflow:hidden;box-shadow:0 18px 34px rgba(43,50,57,.28),0 2px 6px rgba(43,50,57,.2)}
+.pc-front{background:#f8f3e7}
+.pc-front img{display:block;width:100%;height:100%;object-fit:cover}
+.pc-note{position:absolute;right:20px;bottom:14px;font:400 24px/1.1 var(--hand);color:#fffdf5;text-shadow:0 1px 3px rgba(34,42,51,.6)}
+.pc-back{transform:rotateY(180deg);background:var(--paper-grain),linear-gradient(#fbf9f3,#f1ecdf);text-align:left}
+.pc-back::before{content:"";position:absolute;left:52%;top:14px;bottom:14px;width:1px;background:rgba(69,80,91,.35)}
+.pc-msg{position:absolute;left:16px;top:16px;width:46%;font:400 17px/1.35 var(--hand);color:#2e363e}
+.pc-msg b{display:block;margin-top:.6em;font-weight:400;font-size:19px;color:var(--olive)}
+.pc-stamp{position:absolute;right:14px;top:14px;width:46px;height:55px;filter:drop-shadow(0 1px 2px rgba(40,40,30,.35))}
+.pc-mark{position:absolute;right:58px;top:20px;width:66px;color:#7b4a3a;opacity:.6;transform:rotate(-8deg)}
+.pc-addr{position:absolute;left:55%;right:12px;bottom:16px;font:400 12px/1.7 var(--mono);color:#383f46;letter-spacing:.02em;border-top:1px solid rgba(69,80,91,.3);padding-top:8px}
+
+/* dress code tag */
+.tag-sec{display:grid;justify-items:center}
+.tag{position:relative;width:min(100%,330px);padding:60px 26px 28px;color:var(--ink);text-align:center;display:grid;gap:14px;
+  background:var(--paper-grain),linear-gradient(170deg,#f6f1e4,#e8e1cf);
+  clip-path:polygon(16% 0,84% 0,100% 11%,100% 100%,0 100%,0 11%);transform:rotate(1.6deg);filter:drop-shadow(0 16px 20px rgba(43,50,57,.26))}
+.tag::before{content:"";position:absolute;inset:7px;border:1.5px dashed rgba(87,102,118,.7);clip-path:polygon(16% 0,84% 0,100% 11%,100% 100%,0 100%,0 11%);pointer-events:none}
+.tag-hole{position:absolute;left:50%;top:18px;width:26px;height:26px;margin-left:-13px;border-radius:50%;background:radial-gradient(circle at 50% 50%,#b3ada1 0 52%,#9a9a8a 53% 60%,#c7d0da 61%);box-shadow:inset 0 2px 3px rgba(0,0,0,.35),0 0 0 3px var(--sage-3)}
+.tag h2{font:400 31px/1.1 var(--display);color:var(--olive);text-wrap:balance}
+.swatches{display:flex;justify-content:center;gap:4px;flex-wrap:wrap;margin:2px 0;padding:0;list-style:none}
+.swatches li{display:grid;gap:5px;justify-items:center;width:52px}
+.swatches i{display:block;width:34px;height:34px;border-radius:50%;background:var(--c);box-shadow:inset 0 0 0 1px rgba(34,42,51,.25),0 2px 4px rgba(34,42,51,.2)}
+.swatches span{font:500 11.5px/1.15 var(--body);color:#454d55}
+.tips{margin:0;padding:0;list-style:none;display:grid;gap:8px;text-align:left}
+.tips li{position:relative;padding-left:20px;font-size:15px;line-height:1.45;color:#2d353d}
+.tips li::before{content:"";position:absolute;left:3px;top:.55em;width:8px;height:8px;border-radius:50%;background:var(--gold-2);box-shadow:0 0 0 1px var(--gold-1)}
+
+/* accordions */
+.acc{display:grid}
+details{border-top:1px solid var(--line);padding:14px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;font:400 20px/1.25 var(--display);color:var(--olive);min-height:30px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:400 22px/1 var(--mono);color:var(--gold-4)}
+details[open] summary::after{content:"–"}
+summary:focus-visible{outline:2px solid var(--gold-4);outline-offset:3px}
+details > div{display:grid;gap:10px;padding-top:12px;font-size:16px;color:#323a43}
+.copyline{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.copyline code{font:400 14px/1.3 var(--mono);background:#fff;padding:6px 9px;border-radius:4px;border:1px solid var(--line);user-select:all;overflow-wrap:anywhere}
+.mini{font:500 13px/1 var(--body);background:none;border:1px solid var(--gold-4);border-radius:99px;padding:8px 12px;min-height:34px;cursor:pointer;color:var(--ink)}
+
+/* boarding pass RSVP */
+.bp{position:relative;display:grid;grid-template-columns:38px 1fr;border-radius:14px;overflow:hidden;background:var(--paper-grain),#fff;box-shadow:0 18px 34px rgba(43,50,57,.24),0 2px 6px rgba(43,50,57,.18)}
+.bp-cap{background:var(--foil);background-size:230% 100%;animation:shine 7s ease-in-out infinite;display:grid;place-items:center}
+.bp-cap span{writing-mode:vertical-rl;transform:rotate(180deg);font:400 15px/1 var(--display);letter-spacing:.34em;text-transform:uppercase;color:#33250a}
+.bp-main{display:grid;gap:0;min-width:0;background:var(--paper-grain),linear-gradient(#fff,#f7f3e8)}
+.bp-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;padding:18px 20px 4px;font:500 12px/1.2 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#555c63}
+.bp-top b{font:400 20px/1.2 var(--display);letter-spacing:.2em;color:var(--olive)}
+.bp-route{display:flex;justify-content:space-between;align-items:center;padding:12px 20px 4px}
+.bp-route b{display:block;font:400 38px/1 var(--display);color:var(--ink)}
+.bp-route .k{display:block;margin-bottom:2px}
+.bp-route .r{text-align:right}
+.bp-plane{flex:1;margin:0 12px;border-top:1.5px dashed #878e95;position:relative;height:0}
+.bp-plane::after{content:"✈";position:absolute;left:50%;top:-13px;transform:translateX(-50%);background:#fcfaf4;padding:0 6px;color:var(--gold-4);font-size:18px}
+.k{display:block;font:500 12px/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#555c63}
+.perf{height:26px;position:relative;margin-top:6px;
+  -webkit-mask:radial-gradient(circle at 0 50%,#0000 12px,#000 12.5px) left/51% 100% no-repeat,radial-gradient(circle at 100% 50%,#0000 12px,#000 12.5px) right/51% 100% no-repeat;
+  mask:radial-gradient(circle at 0 50%,#0000 12px,#000 12.5px) left/51% 100% no-repeat,radial-gradient(circle at 100% 50%,#0000 12px,#000 12.5px) right/51% 100% no-repeat}
+.perf::before{content:"";position:absolute;left:14px;right:14px;top:50%;border-top:2px dashed var(--line)}
+#rsvp{padding:8px 20px 22px;display:grid;gap:18px}
+.fld{display:grid;gap:7px}
+input[type=text],select,textarea{width:100%;font:400 16px/1.3 var(--body);padding:12px;border:1px solid #d3c9b2;border-radius:8px;background:#fffdf8;color:var(--ink);min-height:46px}
+textarea{min-height:76px;resize:vertical}
+input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible{outline:2px solid var(--gold-4);outline-offset:2px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{display:flex;align-items:center;justify-content:center;min-height:48px;text-align:center;padding:10px;border:1px solid #d3c9b2;border-radius:8px;cursor:pointer;background:#fffdf8;font-weight:500;font-size:16px}
+.seg input:checked + label{background:var(--olive);color:#fbf7ea;border-color:var(--olive)}
+.seg input:focus-visible + label{outline:2px solid var(--gold-4);outline-offset:2px}
+.yesf{display:grid;gap:18px}
+.guests{display:grid;gap:12px}
+.guest{display:grid;grid-template-columns:auto 1fr;gap:9px 12px;align-items:start;padding:12px;border:1px solid var(--line);border-radius:10px;background:#fffdf8}
+.seat{grid-row:span 3;align-self:stretch;display:grid;place-content:center;gap:2px;min-width:56px;padding:6px 8px;border-radius:8px;background:var(--olive);color:#fbf7ea;text-align:center;font-family:var(--mono)}
+.seat small{font-size:10px;letter-spacing:.14em;opacity:.85}
+.seat b{font-size:18px;font-weight:500}
+.gname{font-weight:500;font-size:16px;padding:12px 2px;min-width:0;overflow-wrap:anywhere}
+.guest select,.guest input[type=text]{min-height:44px;padding:9px 10px}
+.submit{background:var(--foil);background-size:230% 100%;animation:shine 7s ease-in-out infinite;color:#2b2210;border:1px solid #8a6420;border-radius:99px;min-height:52px;padding:0 20px;font:500 16px/1 var(--body);letter-spacing:.05em;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 8px 16px rgba(120,90,30,.28)}
+.err{color:var(--stamp);font-size:14px}
+.done{padding:22px 20px 14px;text-align:center;display:grid;gap:14px;justify-items:center}
+.bigstamp{font:500 22px/1 var(--mono);letter-spacing:.2em;color:var(--ok);border:3px solid var(--ok);padding:11px 18px;border-radius:6px;transform:rotate(-7deg);animation:thud .5s cubic-bezier(.2,1.6,.4,1) both}
+.done.no .bigstamp{color:var(--stamp);border-color:var(--stamp)}
+@keyframes thud{from{transform:rotate(-7deg) scale(2.2);opacity:0}to{transform:rotate(-7deg) scale(1);opacity:1}}
+.manifest{list-style:none;margin:0;padding:0;display:grid;gap:4px;width:100%;max-width:320px;text-align:left}
+.manifest li{display:grid;grid-template-columns:44px 1fr;gap:2px 10px;border-bottom:1px dashed var(--line);padding:8px 0;font-size:15px}
+.manifest li > span{grid-row:span 2;font:500 14px/1.4 var(--mono);color:var(--olive)}
+.manifest em{font-style:normal;font:400 13px/1.3 var(--mono);color:#596067}
+.sync{margin:0;font:500 12px/1.45 var(--mono);letter-spacing:.04em;color:var(--muted);max-width:320px}
+.sync.bad{color:var(--stamp)}
+.link{background:none;border:0;color:#555c63;text-decoration:underline;cursor:pointer;font-size:15px;min-height:40px}
+.bp .bars{height:34px;margin:6px 20px 20px;background:repeating-linear-gradient(90deg,#252c33 0 2px,transparent 2px 5px,#252c33 5px 9px,transparent 9px 11px,#252c33 11px 12px,transparent 12px 16px);opacity:.8}
+
+/* couple's view */
+.host{position:relative;background:var(--paper);border-radius:10px;padding:20px;display:grid;gap:14px;box-shadow:0 10px 24px rgba(43,50,57,.22)}
+.host h2{font:400 22px/1.2 var(--display);color:var(--olive)}
+.stats{display:flex;gap:20px;flex-wrap:wrap;font:500 12px/1.2 var(--mono);color:#555c63}
+.stats b{font:400 26px/1.1 var(--display);display:block;color:var(--ink);font-variant-numeric:tabular-nums}
+.meals{display:flex;flex-wrap:wrap;gap:8px}
+.meals span{font:500 12px/1.2 var(--mono);color:#555c63;border:1px solid var(--line);border-radius:99px;padding:6px 10px;background:#fff}
+.meals b{color:var(--ink);font-weight:500}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{text-align:left;vertical-align:top;padding:7px 8px;border-bottom:1px solid var(--line);min-width:84px}
+th{font:500 11px/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#555c63;white-space:nowrap}
+
+.foot{display:grid;gap:8px;text-align:center;padding-block:8px 0}
+.foot .foil{font:400 48px/1.3 var(--script);padding:.05em .2em}
+.demo-foot{font:500 12px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#4c535b}
+
+/* ---------- atmosphere ---------- */
+body::before{content:"";position:fixed;inset:-25%;z-index:-1;pointer-events:none;background:linear-gradient(115deg,transparent 38%,rgba(255,255,255,.2) 50%,transparent 62%);animation:drift 22s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateX(-14%)}to{transform:translateX(14%)}}
+@supports (animation-timeline:view()){
+  .journey > .card,.journey > .board,.journey > .pc-sec,.journey > .tag-sec,.journey > .bp,.journey > .foot{animation:lift linear both;animation-timeline:view();animation-range:entry 0% entry 45%}
+  @keyframes lift{from{transform:translateY(34px)}to{transform:none}}
+}
+@media (min-width:700px){:root{--wrapw:480px}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important;transition-delay:0s!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="g-foil" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="120" y2="120">
+      <stop offset="0" stop-color="#8a6420"/><stop offset=".2" stop-color="#d9b862"/><stop offset=".38" stop-color="#f7e8b6"/><stop offset=".55" stop-color="#b98a35"/><stop offset=".76" stop-color="#ebce80"/><stop offset="1" stop-color="#9a7126"/>
+    </linearGradient>
+    <clipPath id="emb-clip"><circle cx="60" cy="60" r="43"/></clipPath>
+    <clipPath id="mini-clip"><circle cx="60" cy="60" r="31"/></clipPath>
+    <!-- a coconut palm, base at 0 0, leaning right -->
+    <g id="palm">
+      <path d="M-1.8 0C1 -12 3 -22 5.2 -33L7.6 -32.6C5.6 -22 3.8 -11 1.8 0Z"/>
+      <path d="M6.4 -33.5C0 -36.5 -6.5 -34.5 -11 -28C-5 -31 1 -32 6.4 -33.5Z"/>
+      <path d="M6.4 -33.5C2 -40.5 -3.5 -42.5 -9 -41C-2.5 -39 2 -37 6.4 -33.5Z"/>
+      <path d="M6.4 -33.5C5.6 -40.5 8 -45.5 12.5 -47.5C9.2 -43 8 -38 6.4 -33.5Z"/>
+      <path d="M6.4 -33.5C11 -39.5 17.5 -40.5 23 -37C16.5 -37.2 11 -36 6.4 -33.5Z"/>
+      <path d="M6.4 -33.5C13.5 -34 19.5 -30 21.5 -23.5C17.5 -29 12 -32 6.4 -33.5Z"/>
+      <path d="M6.4 -33.5C2.8 -31 .2 -27 -1 -21.5C1 -27 3.2 -30.2 6.4 -33.5Z"/>
+      <circle cx="5.4" cy="-31.6" r="1.4"/><circle cx="7.9" cy="-31.2" r="1.3"/>
+    </g>
+    <path id="plane" d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+    <path id="ringp" d="M60 60m-47 0a47 47 0 1 1 94 0a47 47 0 1 1-94 0"/>
+    <!-- the emblem: a low sun over the Andaman Sea, two palms on the shore, a longtail boat and a dotted route, inside a ring of type -->
+    <g id="emb">
+      <circle cx="60" cy="60" r="57" fill="none" stroke-width="1.5"/>
+      <circle cx="60" cy="60" r="53.2" fill="none" stroke-width=".6" stroke-dasharray="1 2.3"/>
+      <text style="font-family:'Gilda Display',serif" font-size="6.3" stroke="none"><textPath href="#ringp" textLength="291" lengthAdjust="spacing">KVIETIMAS Į VESTUVES · KRABIS · TAILANDAS · 2027 ·</textPath></text>
+      <circle cx="60" cy="60" r="43" fill="none" stroke-width=".9"/>
+      <g clip-path="url(#emb-clip)">
+        <circle cx="74" cy="66" r="11" stroke="none"/>
+        <path d="M14 69.5H106" fill="none" stroke-width="1.1"/>
+        <path d="M58 75c4-2 8-2 12 0s8 2 12 0 8-2 12 0M64 81c4-2 8-2 12 0s8 2 12 0 8-2 12 0M54 87c4-2 8-2 12 0s8 2 12 0 8-2 12 0 8 2 12 0" fill="none" stroke-width="1" stroke-linecap="round"/>
+        <path d="M80 76.5H97L94.5 80H82.5ZM97 76.5L101 71" stroke="none"/><path d="M97 76.5L101.5 70.5" fill="none" stroke-width=".8"/>
+        <path d="M10 104V90C22 84 36 83 52 90C58 93 62 98 64 104Z" stroke="none"/>
+        <use href="#palm" transform="translate(30 89) scale(1.08)" stroke="none"/>
+        <use href="#palm" transform="translate(42 91) scale(-.78 .78)" stroke="none"/>
+      </g>
+      <path d="M22 50C34 40 52 36 66 38S88 42 97 36" fill="none" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="1.5 2.8"/>
+      <use href="#plane" x="-12" y="-12" transform="translate(98 35) rotate(62) scale(.9)" stroke="none"/>
+    </g>
+    <g id="emb-mini">
+      <circle cx="60" cy="60" r="37" fill="none" stroke-width="2.6"/>
+      <circle cx="60" cy="60" r="33" fill="none" stroke-width=".9" stroke-dasharray="1.6 2.6"/>
+      <g clip-path="url(#mini-clip)" stroke="none">
+        <circle cx="70" cy="58" r="9"/>
+        <path d="M24 72H96V75H24Z"/><path d="M24 80C34 77 44 77 54 80S74 83 96 79V96H24Z"/>
+        <use href="#palm" transform="translate(50 82) scale(1.22)"/>
+      </g>
+    </g>
+  </defs>
+</svg>
+
+<div class="demo-tag">Pavyzdys · išgalvota pora ir vieta</div>
+
+<main class="wrap">
+  <section class="stage" id="stage" aria-label="Kvietimas į vestuves">
+
+    <div class="hero" id="hero">
+      <p class="eyebrow">Kvietimas į vestuves</p>
+      <h1 class="names">Rūta &amp; Žygimantas</h1>
+      <svg class="rule" viewBox="0 0 90 9" aria-hidden="true"><path d="M0 4.5H36M54 4.5H90" stroke="currentColor" stroke-width=".8" fill="none"/><path d="M45 .8L49.2 4.5 45 8.2 40.8 4.5Z" fill="currentColor"/></svg>
+      <p class="dateline">2027 m. vasario 13 d. · Krabis, Tailandas</p>
+    </div>
+
+    <!-- desk props: a brass magnifier over Krabi's coordinates, two coins -->
+    <svg class="lens" id="lens" viewBox="0 0 160 120" aria-hidden="true"></svg>
+    <svg class="decor-seal gold" id="decor-gold" viewBox="0 0 120 120" aria-hidden="true"></svg>
+    <svg class="decor-seal mint" id="decor-mint" viewBox="0 0 120 120" aria-hidden="true"></svg>
+    <p class="dist" aria-hidden="true"><span>Vilnius ✈ Krabis<br>~8 200 km</span></p>
+
+    <!-- the envelope: back, contents, front pocket, flap, coin seal -->
+    <div class="env-back ep" aria-hidden="true"></div>
+
+    <div class="items" id="items">
+      <div class="bpass" aria-hidden="true">
+        <div class="cap"><span>Boarding pass</span></div>
+        <div class="main"><b>VNO &nbsp;✈&nbsp; KBV</b><i>SVEČIAS · VIETA 2A</i><div class="bars"></div></div>
+      </div>
+
+      <div class="passport" id="passport" role="button" tabindex="-1" aria-label="Atidaryti pasą">
+        <div class="page-id">
+          <div class="pi-head"><span>Asmens duomenys</span><span>02</span></div>
+          <h2 class="pi-title">Mes susituokiame Tailande</h2>
+          <div class="pi-body">
+            <div class="photo" aria-hidden="true">
+              <svg viewBox="0 0 100 100"><g fill="none" stroke="#5f7d9c" stroke-width="1.6" stroke-linecap="round"><circle cx="50" cy="50" r="40" opacity=".5"/><path d="M24 70c5-3 9-3 13 0s9 3 13 0 9-3 13 0 9 3 13 0" opacity=".55"/></g><text x="50" y="60" text-anchor="middle" font-family="Allura,cursive" font-size="40" fill="#3f5f80">R&amp;Ž</text></svg>
+            </div>
+            <dl class="pi-data">
+              <div><dt>Keliautojai</dt><dd>Rūta ir Žygimantas</dd></div>
+              <div><dt>Data</dt><dd>2027 02 13 · 17:00</dd></div>
+              <div><dt>Vieta</dt><dd>Ao Nang, Krabis</dd></div>
+              <div><dt>Galioja iki</dt><dd>Amžinai</dd></div>
+            </dl>
+          </div>
+          <div></div>
+          <pre class="mrz" aria-hidden="true">P&lt;LTURUTA&lt;&lt;ZYGIMANTAS&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+KRABI27021317&lt;LTU&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;2</pre>
+          <svg class="pi-stamp" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="currentColor"><rect x="6" y="18" width="88" height="64" rx="10" stroke-width="2.4"/><rect x="12" y="24" width="76" height="52" rx="6" stroke-width="1"/></g><text x="50" y="46" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" font-weight="500" fill="currentColor" letter-spacing="1.4">KRABI</text><text x="50" y="60" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="8" fill="currentColor" letter-spacing="1">13 II 2027</text><path d="M26 66h48" stroke="currentColor" stroke-width="1"/></svg>
+        </div>
+
+        <div class="cover" id="cover">
+          <div class="cover-front">
+            <p class="c-top foil">PASAS</p>
+            <svg class="emblem" viewBox="0 0 120 120" aria-hidden="true">
+              <use href="#emb" fill="#1d1606" stroke="#1d1606" opacity=".5" transform="translate(.7 1)"/>
+              <use href="#emb" fill="#fff3c8" stroke="#fff3c8" opacity=".6" transform="translate(-.5 -.6)"/>
+              <use href="#emb" fill="url(#g-foil)" stroke="url(#g-foil)"/>
+            </svg>
+            <p class="c-names foil">Rūta &amp; Žygimantas</p>
+            <p class="c-date foil">2027 · 02 · 13</p>
+            <svg class="twine" viewBox="0 0 240 336" aria-hidden="true"><g transform="translate(0 26)">
+              <g id="cords" fill="none">
+                <path class="cord l" d="M120 262C80 266 40 262-8 266" stroke="#1d1606" stroke-opacity=".4" stroke-width="5.4" transform="translate(0 1.6)"/>
+                <path class="cord r" d="M120 262C160 266 200 262 248 266" stroke="#1d1606" stroke-opacity=".4" stroke-width="5.4" transform="translate(0 1.6)"/>
+                <path class="cord l" d="M120 262C80 266 40 262-8 266" stroke="url(#g-foil)" stroke-width="3.6"/>
+                <path class="cord r" d="M120 262C160 266 200 262 248 266" stroke="url(#g-foil)" stroke-width="3.6"/>
+              </g>
+              <g class="knot">
+                <path d="M120 262C104 246 90 252 98 266C104 274 116 270 120 262ZM120 262C136 246 150 252 142 266C136 274 124 270 120 262Z" fill="none" stroke="#1d1606" stroke-opacity=".4" stroke-width="5" transform="translate(0 1.6)"/>
+                <path d="M120 262C104 246 90 252 98 266C104 274 116 270 120 262ZM120 262C136 246 150 252 142 266C136 274 124 270 120 262Z" fill="none" stroke="url(#g-foil)" stroke-width="3.4" stroke-linejoin="round"/>
+                <circle cx="120" cy="262" r="5" fill="url(#g-foil)"/>
+                <path d="M118 266C112 284 108 296 100 306M122 266C128 284 132 296 140 306" fill="none" stroke="url(#g-foil)" stroke-width="3"/>
+              </g>
+              <g class="charm">
+                <path d="M120 266v14" stroke="url(#g-foil)" stroke-width="1.6" fill="none"/>
+                <use href="#plane" x="-12" y="-12" transform="translate(120.8 291) rotate(40) scale(1.05)" fill="#1d1606" opacity=".45"/>
+                <use href="#plane" x="-12" y="-12" transform="translate(120 290.2) rotate(40) scale(1.05)" fill="url(#g-foil)"/>
+              </g>
+            </g></svg>
+          </div>
+          <div class="cover-back"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pocket-wrap ep" aria-hidden="true">
+      <div class="pocket-paper"></div>
+      <svg class="pocket" viewBox="0 0 320 224" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="pk-l" x1="0" y1="0" x2="1" y2=".5"><stop offset="0" stop-color="#14243a" stop-opacity=".1"/><stop offset="1" stop-color="#14243a" stop-opacity=".2"/></linearGradient>
+          <linearGradient id="pk-r" x1="1" y1="0" x2="0" y2=".5"><stop offset="0" stop-color="#14243a" stop-opacity=".02"/><stop offset="1" stop-color="#14243a" stop-opacity=".12"/></linearGradient>
+          <linearGradient id="pk-b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".14"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+          <linearGradient id="pk-s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14243a" stop-opacity=".34"/><stop offset="1" stop-color="#14243a" stop-opacity="0"/></linearGradient>
+          <clipPath id="pk-clip"><path d="M0 224V0L160 136 320 0V224Z"/></clipPath>
+        </defs>
+        <g clip-path="url(#pk-clip)">
+          <path d="M0 0L160 136 0 224Z" fill="url(#pk-l)"/>
+          <path d="M320 0L160 136 320 224Z" fill="url(#pk-r)"/>
+          <path d="M0 224L160 136 320 224Z" fill="url(#pk-b)"/>
+          <path d="M0 224L160 136 320 224" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="1.2"/>
+          <path d="M0 6L160 142 320 6" fill="none" stroke="url(#g-foil)" stroke-width="1.5"/>
+          <path d="M0 0L160 136 320 0V26L160 162 0 26Z" fill="url(#pk-s)" opacity=".5"/>
+        </g>
+        <path d="M0 0L160 136 320 0" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1"/>
+      </svg>
+    </div>
+
+    <div class="flap-wrap ep" id="flapwrap" aria-hidden="true">
+      <div class="flap" id="flap">
+        <div class="flap-out">
+          <div class="flap-paper"></div>
+          <svg viewBox="0 0 320 139" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="fl-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#14243a" stop-opacity=".1"/></linearGradient>
+              <clipPath id="fl-clip"><path d="M0 0H320L160 139Z"/></clipPath>
+            </defs>
+            <g clip-path="url(#fl-clip)"><rect width="320" height="139" fill="url(#fl-g)"/></g>
+            <path d="M10 5L160 130 310 5" fill="none" stroke="url(#g-foil)" stroke-width="1.4"/>
+            <path d="M0 0L160 139 320 0" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="flap-in"></div>
+      </div>
+    </div>
+
+    <button class="seal ep" id="seal" type="button" aria-label="Paimti monetą ir atidaryti kvietimą">
+      <span class="half l"></span><span class="half r"></span>
+      <i class="crumb" style="--dx:-3.4em;--dy:-2.6em"></i><i class="crumb" style="--dx:3.6em;--dy:-2.2em"></i><i class="crumb" style="--dx:-1.6em;--dy:-4em"></i><i class="crumb" style="--dx:2em;--dy:-4.2em"></i><i class="crumb" style="--dx:-4.4em;--dy:.6em"></i><i class="crumb" style="--dx:4.6em;--dy:.2em"></i>
+    </button>
+
+    <p class="prompt" id="prompt"><span class="pt" id="prompt-text">Palieskite monetą</span></p>
+    <p class="scroll-hint" id="scroll-hint"><span class="pt">Slinkite žemyn</span></p>
+  </section>
+
+  <div class="journey" id="journey">
+
+    <section class="card" id="p-count" aria-labelledby="count-h">
+      <div class="label"><span id="count-h">Iki išvykimo</span><span>03</span></div>
+      <div class="count" role="timer" aria-label="Laikas iki vestuvių">
+        <div><b id="cd-d">—</b><span>dienų</span></div><div><b id="cd-h">—</b><span>val.</span></div><div><b id="cd-m">—</b><span>min.</span></div><div><b id="cd-s">—</b><span>sek.</span></div>
+      </div>
+      <p class="lead">Baan Rak Talay, Ao Nang. Ceremonija 17:00 ant kranto, kai saulė jau žema, po jos vakarienė po žvaigždėmis ir šokiai basomis.</p>
+      <div class="btnrow">
+        <a class="btn foil" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=R%C5%ABtos%20ir%20%C5%BDygimanto%20vestuv%C4%97s&amp;dates=20270213T100000Z/20270213T160000Z&amp;location=Ao%20Nang%2C%20Krabi%2C%20Tailandas&amp;details=Ceremonija%2017%3A00%20vietos%20laiku">+ Į kalendorių</a>
+        <a class="btn" href="#rsvp-h">Atsakyti iki 2026 12 01</a>
+      </div>
+    </section>
+
+    <section class="board" id="p-board" aria-labelledby="board-h">
+      <div class="b-head"><h2 id="board-h">Išvykimų lentelė</h2><span>2027 02 13 · šeštadienis</span></div>
+      <div class="b-list" role="list">
+        <div class="brow" role="listitem" aria-label="16:30 Atvykimas. Prie vilos vartų, šaltas kokosų vanduo.">
+          <div class="cells t" data-text="16:30">16:30</div><div class="cells e" data-text="ATVYKIMAS">ATVYKIMAS</div><span class="gate">B1</span>
+          <p class="where">Prie vilos vartų, šaltas kokosų vanduo</p>
+        </div>
+        <div class="brow" role="listitem" aria-label="17:00 Ceremonija. Ant kranto, basomis.">
+          <div class="cells t" data-text="17:00">17:00</div><div class="cells e" data-text="CEREMONIJA">CEREMONIJA</div><span class="gate">B2</span>
+          <p class="where">Ant kranto, basomis</p>
+        </div>
+        <div class="brow" role="listitem" aria-label="18:15 Saulėlydis. Kokteiliai ant prieplaukos.">
+          <div class="cells t" data-text="18:15">18:15</div><div class="cells e" data-text="SAULĖLYDIS">SAULĖLYDIS</div><span class="gate">B3</span>
+          <p class="where">Kokteiliai ant prieplaukos</p>
+        </div>
+        <div class="brow" role="listitem" aria-label="19:30 Vakarienė. Po žvaigždėmis, tajų virtuvė.">
+          <div class="cells t" data-text="19:30">19:30</div><div class="cells e" data-text="VAKARIENĖ">VAKARIENĖ</div><span class="gate">B4</span>
+          <p class="where">Po žvaigždėmis, tajų virtuvė</p>
+        </div>
+        <div class="brow" role="listitem" aria-label="21:30 Šokiai. Iki paskutinės dainos.">
+          <div class="cells t" data-text="21:30">21:30</div><div class="cells e" data-text="ŠOKIAI">ŠOKIAI</div><span class="gate">B5</span>
+          <p class="where">Iki paskutinės dainos</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pc-sec" id="p-venue" aria-labelledby="venue-h">
+      <div class="label dark"><span id="venue-h">Atvirukas iš Tailando</span><span>04</span></div>
+      <button class="postcard" id="postcard" type="button" aria-pressed="false" aria-label="Atvirukas. Palieskite, kad apverstumėte ir pamatytumėte adresą.">
+        <span class="pc-inner">
+          <span class="pc-face pc-front"><img src="img/postcard.jpg" width="1000" height="700" alt="Akvarele nutapytas paplūdimys su palmėmis, prieplauka ir ilgauodege valtimi"><span class="pc-note">Sawasdee, Krabi!</span></span>
+          <span class="pc-face pc-back">
+            <span class="pc-msg">Brangūs svečiai,<br>pabėkime nuo žiemos kartu. Lauksime jūsų Tailande, ten, kur vasarį šilta jūra.<br><b>Rūta ir Žygimantas</b></span>
+            <svg class="pc-stamp" viewBox="0 0 60 72" aria-hidden="true"><rect width="60" height="72" fill="#f4ecd8"/><rect x="6" y="6" width="48" height="60" fill="#d6ece8"/><circle cx="38" cy="34" r="7" fill="#f2c27a"/><path d="M6 40H54V66H6Z" fill="#5fb3b0"/><path d="M6 46H54V66H6Z" fill="#3f8f95" opacity=".6"/><path d="M6 54C18 50 30 50 42 56L54 60V66H6Z" fill="#ecd9b0"/><use href="#palm" transform="translate(18 56) scale(.62)" fill="#2c5548"/><text x="30" y="17" text-anchor="middle" font-family="'Gilda Display',serif" font-size="6.6" fill="#2c4a63" letter-spacing=".6">THAILAND</text><text x="30" y="63.5" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="5" fill="#2c4a63">2027 · 30 THB</text><rect x="-.5" y="-.5" width="61" height="73" fill="none" stroke="#f6f1e5" stroke-width="3.4" stroke-dasharray="3.2 3.2"/></svg>
+            <svg class="pc-mark" viewBox="0 0 80 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><circle cx="22" cy="20" r="16"/><path d="M42 12c6-3 12-3 18 0s12 3 18 0M42 20c6-3 12-3 18 0s12 3 18 0M42 28c6-3 12-3 18 0s12 3 18 0"/></g><text x="22" y="18" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="5" fill="currentColor">KRABI</text><text x="22" y="25" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="5" fill="currentColor">13 II</text></svg>
+            <span class="pc-addr">Baan Rak Talay<br>Moo 2, Ao Nang<br>81180 Krabi<br>Tailandas</span>
+          </span>
+        </span>
+      </button>
+      <p class="hint dark">Palieskite atviruką, kad apverstumėte</p>
+      <a class="btn foil" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Ao+Nang%2C+Krabi%2C+Thailand">Atidaryti žemėlapį →</a>
+    </section>
+
+    <section class="tag-sec" id="p-dress" aria-labelledby="dress-h">
+      <div class="tag">
+        <span class="tag-hole" aria-hidden="true"></span>
+        <p class="label-mono">Aprangos kodas</p>
+        <h2 id="dress-h">Tropikų vakaras</h2>
+        <ul class="swatches" aria-label="Spalvų paletė">
+          <li style="--c:#f4efe4"><i></i><span>baltas linas</span></li>
+          <li style="--c:#e3cfa8"><i></i><span>smėlis</span></li>
+          <li style="--c:#6dbab5"><i></i><span>turkis</span></li>
+          <li style="--c:#8aa0b8"><i></i><span>dulkėtas mėlis</span></li>
+          <li style="--c:#e3907a"><i></i><span>koralas</span></li>
+        </ul>
+        <ul class="tips">
+          <li>Lengvi audiniai: linas, šilkas, medvilnė. Švarkų nereikės.</li>
+          <li>Ceremonija ant smėlio: rinkitės basutes arba būkite basi.</li>
+          <li>Vakare šilta ir drėgna. Pasiimkite kremą nuo uodų.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card" id="p-info" aria-labelledby="info-h">
+      <div class="label"><span>Kelionės informacija</span><span>05</span></div>
+      <h2 class="h2" id="info-h">Viskas, ką reikia žinoti</h2>
+      <div class="acc">
+        <details open><summary>Kaip nuvykti</summary><div>
+          <p>Skrydžiai Vilnius → Krabis (KBV) su persėdimu Dohoje, Stambule arba Dubajuje, kelionė trunka apie 15–17 val. Iš Krabio oro uosto iki vilos apie 30 min. automobiliu.</p>
+          <p>Vasario 12 d. 15:00 ir vasario 14 d. 12:00 nuo oro uosto važiuos svečių autobusiukas. Vietų skaičius ribotas, parašykite koordinatorei.</p></div></details>
+        <details><summary>Kur apsistoti</summary><div>
+          <p>Viloje rezervavome 10 kambarių iki 2026 12 01. Nurodykite kodą:</p>
+          <div class="copyline"><code id="code">RUTAZYGIMANTAS27</code><button class="mini" data-copy="code" type="button">Kopijuoti</button></div>
+          <p>Pigiau: viešbučiai Ao Nang paplūdimyje, 5 min. pėsčiomis.</p></div></details>
+        <details><summary>Dokumentai</summary><div>
+          <p>Pasas turi galioti bent 6 mėnesius nuo atvykimo dienos.</p>
+          <p>Vizų ir atvykimo taisyklės keičiasi, todėl prieš perkant bilietus pasitikrinkite jas oficialiuose šaltiniuose. Kelionės draudimas būtinas.</p></div></details>
+        <details><summary>Dovanos</summary><div>
+          <p>Didžiausia dovana yra jūsų buvimas. Jei norite prisidėti prie mūsų kelionės:</p>
+          <div class="copyline"><code id="iban">LT00 0000 0000 0000 0000</code><button class="mini" data-copy="iban" type="button">Kopijuoti</button></div></div></details>
+        <details><summary>Klausimai ir kontaktai</summary><div>
+          <p><b>Ar galima atvykti su vaikais?</b> Taip, vaikai laukiami.</p>
+          <p><b>Kokie bus orai?</b> Vasarį apie +32 °C, sausasis sezonas, jūra apie +28 °C.</p>
+          <p>Koordinatorė Aistė: <span class="sel">+370 600 00000</span></p></div></details>
+      </div>
+    </section>
+
+    <section class="bp" id="p-rsvp" aria-labelledby="rsvp-h">
+      <div class="bp-cap" aria-hidden="true"><span>Boarding pass</span></div>
+      <div class="bp-main">
+        <div class="bp-top"><b id="rsvp-h">Registracija</b><span>iki 2026 12 01</span></div>
+        <div class="bp-route" aria-hidden="true">
+          <div><span class="k">Iš</span><b>VNO</b></div><div class="bp-plane"></div><div class="r"><span class="k">Į</span><b>KBV</b></div>
+        </div>
+        <div class="perf" aria-hidden="true"></div>
+
+        <form id="rsvp" novalidate>
+          <div class="fld"><label class="k" for="f-name">Vardas ir pavardė</label><input id="f-name" type="text" autocomplete="name" placeholder="pvz. Austėja Petrauskienė"></div>
+          <div class="fld">
+            <span class="k">Ar atvyksite?</span>
+            <div class="seg">
+              <input type="radio" name="att" id="f-yes" value="taip" checked><label for="f-yes">Skrendu</label>
+              <input type="radio" name="att" id="f-no" value="ne"><label for="f-no">Negalėsiu</label>
+            </div>
+          </div>
+          <div class="yesf" id="yes-fields">
+            <div class="fld"><label class="k" for="f-count">Kiek keliautojų?</label>
+              <select id="f-count"><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+            <div class="fld"><span class="k">Keliautojai, meniu ir gėrimai</span><div class="guests" id="guests"></div></div>
+          </div>
+          <div class="fld"><label class="k" for="f-note">Alergijos ar daina šokiams</label><textarea id="f-note" rows="2" placeholder="Neprivaloma"></textarea></div>
+          <p class="err" id="err" hidden>Įrašykite vardą, kad žinotume, kas atsakė.</p>
+          <button class="submit" type="submit" id="submit">Patvirtinti atsakymą</button>
+        </form>
+
+        <div class="done" id="done" hidden>
+          <div class="bigstamp" id="stamp">PATVIRTINTA</div>
+          <p id="done-msg"></p>
+          <ul class="manifest" id="manifest"></ul>
+          <p class="sync" id="sync" role="status" hidden></p>
+          <button class="link" id="again" type="button">Pakeisti atsakymą</button>
+        </div>
+        <div class="bars" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="host" id="host" aria-labelledby="host-h" hidden>
+      <h2 id="host-h">Poros vaizdas: svečių sąrašas</h2>
+      <div class="stats"><div><b id="s-yes">0</b>atvyksta</div><div><b id="s-no">0</b>negalės</div><div><b id="s-guests">0</b>keliautojų</div></div>
+      <div class="meals" id="s-meals"></div>
+      <div class="tbl"><table><thead><tr><th>Atsakė</th><th>Atsakymas</th><th>Keliautojai</th><th>Pastaba</th></tr></thead><tbody id="rows"></tbody></table></div>
+      <div class="btnrow"><button class="btn" id="csv" type="button">Kopijuoti CSV</button><span class="hint" id="csv-msg" aria-live="polite"></span></div>
+      <p class="note">Matoma tik atidarius nuorodą su #poros. Pavyzdyje atsakymai saugomi tik šioje naršyklėje.</p>
+    </section>
+
+    <footer class="foot"><p class="foil">Iki pasimatymo Tailande</p><p class="demo-foot">Pavyzdys · išgalvota pora ir vieta</p></footer>
+  </div>
+</main>
+
+<button class="music" id="music" type="button" aria-pressed="false"><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span id="music-l">Muzika</span></button>
+<script>
+(function () {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const stage = $('stage'), seal = $('seal'), passport = $('passport'), prompt = $('prompt');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const body = document.body;
+  let uid = 0;
+
+  /* ---------- coins: a struck metal disc with a beaded rim and the palm emblem ---------- */
+  const METAL = {
+    copper: { l: '#f6c79a', m: '#c27a45', d: '#6e3818', e: '#ffe3c6', base: '#a9623a' },
+    gold: { l: '#f8e0a4', m: '#c9a14e', d: '#7a5317', e: '#fff2c9', base: '#b78a3a' }
+  };
+  function coinSvg(kind) {
+    const p = METAL[kind], id = 'c' + (++uid);
+    let beads = '';
+    for (let i = 0; i < 60; i++) { const a = i / 60 * Math.PI * 2; beads += `<circle cx="${(60 + Math.cos(a) * 50.5).toFixed(2)}" cy="${(60 + Math.sin(a) * 50.5).toFixed(2)}" r="1.25"/>`; }
+    return `<svg viewBox="0 0 120 120" aria-hidden="true"><defs>
+      <radialGradient id="${id}a" cx=".32" cy=".28" r=".95"><stop offset="0" stop-color="${p.l}"/><stop offset=".45" stop-color="${p.m}"/><stop offset="1" stop-color="${p.d}"/></radialGradient>
+      <radialGradient id="${id}b" cx=".62" cy=".7" r=".9"><stop offset="0" stop-color="${p.l}"/><stop offset=".55" stop-color="${p.m}"/><stop offset="1" stop-color="${p.d}"/></radialGradient></defs>
+      <circle cx="60" cy="60" r="56" fill="url(#${id}a)"/>
+      <circle cx="60" cy="60" r="56" fill="none" stroke="${p.d}" stroke-opacity=".6" stroke-width="1.2"/>
+      <g fill="${p.e}" opacity=".55">${beads}</g>
+      <circle cx="60" cy="60" r="46" fill="url(#${id}b)"/>
+      <circle cx="60" cy="60" r="46" fill="none" stroke="${p.d}" stroke-opacity=".5" stroke-width="1.2" transform="translate(-.6 -.6)"/>
+      <circle cx="60" cy="60" r="46" fill="none" stroke="${p.e}" stroke-opacity=".7" stroke-width="1" transform="translate(.6 .6)"/>
+      <use href="#emb-mini" fill="${p.d}" stroke="${p.d}" opacity=".75" transform="translate(.9 1.2)"/>
+      <use href="#emb-mini" fill="${p.e}" stroke="${p.e}" opacity=".8" transform="translate(-.7 -.8)"/>
+      <use href="#emb-mini" fill="${p.base}" stroke="${p.base}"/>
+      <ellipse cx="40" cy="34" rx="16" ry="7" fill="#fff" opacity=".22" transform="rotate(-32 40 34)"/></svg>`;
+  }
+  const copperCoin = coinSvg('copper');
+  seal.querySelector('.half.l').innerHTML = copperCoin;
+  $('decor-gold').outerHTML = coinSvg('gold').replace('<svg ', '<svg class="decor-seal gold" ');
+  $('decor-mint').outerHTML = copperCoin.replace(/id="c(\d+)/g, 'id="d$1').replace(/#c(\d+)/g, '#d$1').replace('<svg ', '<svg class="decor-seal mint" ');
+
+  /* ---------- brass magnifier over Krabi's coordinates. Š and R are the Lithuanian north and east ---------- */
+  (function lens() {
+    const el = $('lens'); if (!el) return;
+    el.innerHTML = `<defs>
+      <linearGradient id="ln-brass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1dc9c"/><stop offset=".35" stop-color="#c79e4b"/><stop offset=".7" stop-color="#8d6a25"/><stop offset="1" stop-color="#d6b665"/></linearGradient>
+      <linearGradient id="ln-wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a4a2a"/><stop offset=".5" stop-color="#4a2a16"/><stop offset="1" stop-color="#2e190c"/></linearGradient>
+      <radialGradient id="ln-glass" cx=".38" cy=".32" r=".8"><stop offset="0" stop-color="#ffffff" stop-opacity=".34"/><stop offset=".6" stop-color="#d7e8f0" stop-opacity=".1"/><stop offset="1" stop-color="#6f8fa8" stop-opacity=".26"/></radialGradient>
+      <clipPath id="ln-clip"><circle cx="52" cy="58" r="38"/></clipPath></defs>
+      <g transform="rotate(28 52 58)"><rect x="92" y="52" width="16" height="12" rx="2" fill="url(#ln-brass)"/><rect x="106" y="51" width="52" height="14" rx="7" fill="url(#ln-wood)"/><rect x="110" y="53" width="44" height="3" rx="1.5" fill="#fff" opacity=".12"/></g>
+      <g clip-path="url(#ln-clip)">
+        <g font-family="IBM Plex Mono,monospace" fill="#3a4a5c" text-anchor="middle">
+          <text x="52" y="50" font-size="13" font-weight="500" letter-spacing=".5">8°05′ Š</text>
+          <text x="52" y="68" font-size="13" font-weight="500" letter-spacing=".5">98°55′ R</text>
+          <text x="52" y="84" font-size="7" letter-spacing="2" opacity=".7">KRABIS</text>
+        </g>
+        <circle cx="52" cy="58" r="38" fill="url(#ln-glass)"/>
+        <ellipse cx="38" cy="38" rx="20" ry="9" fill="#fff" opacity=".3" transform="rotate(-36 38 38)"/>
+      </g>
+      <circle cx="52" cy="58" r="41" fill="none" stroke="url(#ln-brass)" stroke-width="7"/>
+      <circle cx="52" cy="58" r="37.6" fill="none" stroke="#5c4310" stroke-opacity=".45" stroke-width=".8"/>
+      <circle cx="52" cy="58" r="44.4" fill="none" stroke="#fff3c8" stroke-opacity=".45" stroke-width=".7"/>`;
+  })();
+
+  /* ---------- soft music: a generated pad, starts only after a tap ---------- */
+  let ctx = null, master = null, playing = false, timer = null, muted = false;
+  const chords = [[220, 277.18, 329.63, 440], [196, 246.94, 293.66, 392], [174.61, 220, 261.63, 349.23], [196, 246.94, 329.63, 392]];
+  function chord(i) {
+    const t = ctx.currentTime;
+    chords[i % 4].forEach((f, j) => {
+      const o = ctx.createOscillator(), g = ctx.createGain();
+      o.type = j ? 'sine' : 'triangle'; o.frequency.value = f; o.detune.value = (j - 1.5) * 4;
+      g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(.05, t + 2); g.gain.linearRampToValueAtTime(0, t + 6.5);
+      o.connect(g).connect(master); o.start(t); o.stop(t + 7);
+    });
+  }
+  function musicUi() { const b = $('music'); if (!b) return; b.classList.toggle('playing', playing); b.setAttribute('aria-pressed', playing); $('music-l').textContent = playing ? 'Pauzė' : 'Muzika'; }
+  function startMusic() {
+    try {
+      if (!ctx) {
+        ctx = new (window.AudioContext || window.webkitAudioContext)(); master = ctx.createGain(); master.gain.value = .8;
+        const lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 1400; master.connect(lp).connect(ctx.destination);
+      }
+      muted = false; ctx.resume(); if (playing) return; playing = true; let i = 0; chord(i++); timer = setInterval(() => chord(i++), 5000); musicUi();
+    } catch (e) { }
+  }
+  function stopMusic() { playing = false; muted = true; clearInterval(timer); if (ctx) ctx.suspend(); musicUi(); }
+
+  /* small paper, wax and stamp sounds, built from noise; silent when the music is paused */
+  function foley(kind) {
+    if (!ctx || muted || ctx.state !== 'running') return;
+    try {
+      const t = ctx.currentTime;
+      const noise = dur => { const b = ctx.createBuffer(1, Math.max(1, Math.floor(ctx.sampleRate * dur)), ctx.sampleRate), d = b.getChannelData(0); for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1; const s = ctx.createBufferSource(); s.buffer = b; return s; };
+      const thump = (f0, f1, dur, vol) => { const o = ctx.createOscillator(), g = ctx.createGain(); o.frequency.setValueAtTime(f0, t); o.frequency.exponentialRampToValueAtTime(f1, t + dur); g.gain.setValueAtTime(vol, t); g.gain.exponentialRampToValueAtTime(.001, t + dur); o.connect(g).connect(ctx.destination); o.start(t); o.stop(t + dur + .02); };
+      const burst = (dur, type, f, q, vol, sweepTo) => { const n = noise(dur), flt = ctx.createBiquadFilter(), g = ctx.createGain(); flt.type = type; flt.frequency.setValueAtTime(f, t); if (sweepTo) flt.frequency.linearRampToValueAtTime(sweepTo, t + dur); flt.Q.value = q; g.gain.setValueAtTime(0.0001, t); g.gain.linearRampToValueAtTime(vol, t + Math.min(.03, dur / 4)); g.gain.exponentialRampToValueAtTime(.0008, t + dur); n.connect(flt).connect(g).connect(ctx.destination); n.start(t); };
+      if (kind === 'coin') { [[2637, .09, 1.1], [3951, .05, .8], [5274, .03, .5]].forEach(([f, v, d]) => { const o = ctx.createOscillator(), g = ctx.createGain(); o.frequency.value = f; g.gain.setValueAtTime(v, t); g.gain.exponentialRampToValueAtTime(.0005, t + d); o.connect(g).connect(ctx.destination); o.start(t); o.stop(t + d + .02); }); burst(.04, 'highpass', 3000, .7, .08); }
+      else if (kind === 'slide') burst(.55, 'lowpass', 500, .4, .07, 2200);
+      else if (kind === 'pull') burst(.28, 'highpass', 1800, .5, .05, 4200);
+      else if (kind === 'stamp') { thump(110, 52, .2, .3); burst(.06, 'bandpass', 900, .8, .12); }
+    } catch (e) { console.error('foley', e); }
+  }
+  const mbtn = $('music'); if (mbtn) mbtn.addEventListener('click', () => playing ? stopMusic() : startMusic());
+
+  /* ---------- guilloche: the fine rosette lines on security paper ---------- */
+  (function guilloche() {
+    const sprite = document.querySelector('svg defs'); if (!sprite) return;
+    let d = '';
+    [[50, 11, 14], [50, 11, 24], [50, 13, 34]].forEach(([R, r, dd]) => {
+      const k = (R - r) / r, turns = r / gcd(R, r); let pts = '';
+      for (let t = 0; t <= Math.PI * 2 * turns; t += 0.045) {
+        const x = (R - r) * Math.cos(t) + dd * Math.cos(k * t), y = (R - r) * Math.sin(t) - dd * Math.sin(k * t);
+        pts += (pts ? 'L' : 'M') + x.toFixed(1) + ' ' + y.toFixed(1);
+      }
+      d += pts;
+    });
+    function gcd(a, b) { return b ? gcd(b, a % b) : a; }
+    const sym = document.createElementNS('http://www.w3.org/2000/svg', 'symbol');
+    sym.id = 'guil'; sym.setAttribute('viewBox', '-80 -80 160 160');
+    sym.innerHTML = `<path d="${d}" fill="none" stroke="currentColor" stroke-width=".28"/>`;
+    sprite.appendChild(sym);
+    document.querySelectorAll('.card').forEach(c => { c.insertAdjacentHTML('afterbegin', '<svg class="guil" aria-hidden="true"><use href="#guil"/></svg>'); });
+  })();
+
+  /* ---------- countdown ---------- */
+  (function countdown() {
+    const target = new Date('2027-02-13T17:00:00+07:00'), pad = n => String(n).padStart(2, '0');
+    function tick() {
+      const s = Math.max(0, (target - new Date()) / 1000 | 0);
+      $('cd-d').textContent = Math.floor(s / 86400); $('cd-h').textContent = pad(Math.floor(s % 86400 / 3600));
+      $('cd-m').textContent = pad(Math.floor(s % 3600 / 60)); $('cd-s').textContent = pad(s % 60);
+    }
+    tick(); setInterval(tick, 1000);
+  })();
+
+  /* ---------- departures board: split-flap letters that settle one by one ---------- */
+  (function board() {
+    const rows = [...document.querySelectorAll('.brow')]; if (!rows.length) return;
+    const pool = 'ABCDEFGHIJKLMNOPRSTUVYZ0123456789';
+    function flap(el, text, delay) {
+      el.innerHTML = ''; el.setAttribute('aria-hidden', 'true');
+      [...text].forEach((ch, i) => {
+        const c = document.createElement('span'); c.className = 'cell'; el.appendChild(c);
+        if (ch === ' ') { c.className = 'cell blank'; return; }
+        if (ch === ':') { c.className = 'cell punct'; c.textContent = ':'; return; }
+        if (reduce) { c.textContent = ch; return; }
+        let n = 0; const total = 5 + Math.floor(Math.random() * 6) + i;
+        const tick = () => {
+          c.textContent = n++ < total ? pool[Math.floor(Math.random() * pool.length)] : ch;
+          c.classList.remove('flip'); void c.offsetWidth; c.classList.add('flip');
+          if (n <= total) setTimeout(tick, 55);
+        };
+        setTimeout(tick, delay + i * 45);
+      });
+    }
+    let ran = false;
+    function run() {
+      if (ran) return; ran = true;
+      rows.forEach((row, r) => {
+        flap(row.querySelector('.t'), row.querySelector('.t').dataset.text, r * 260);
+        flap(row.querySelector('.e'), row.querySelector('.e').dataset.text, r * 260 + 120);
+      });
+    }
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { run(); io.disconnect(); } }, { threshold: .25 });
+      io.observe($('p-board'));
+    } else run();
+  })();
+
+  /* ---------- postcard: tap to turn it over ---------- */
+  (function postcard() {
+    const pc = $('postcard'); if (!pc) return;
+    pc.addEventListener('click', () => pc.setAttribute('aria-pressed', pc.getAttribute('aria-pressed') !== 'true'));
+  })();
+
+  /* ---------- copy buttons ---------- */
+  document.querySelectorAll('[data-copy]').forEach(b => b.addEventListener('click', () => {
+    const el = $(b.dataset.copy), t = el.textContent;
+    const ok = () => { b.textContent = 'Nukopijuota'; setTimeout(() => b.textContent = 'Kopijuoti', 1600); };
+    const sel = () => { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+    try { navigator.clipboard.writeText(t).then(ok, sel); } catch (e) { sel(); }
+  }));
+
+  /* ---------- RSVP: one entry per guest; every traveller has a seat, a meal and a drink ---------- */
+  (function rsvp() {
+    const KEY = 'rsvp-palms-v1', ME = 'rsvp-palms-me';
+    const MEALS = ['Mėsa', 'Jūros gėrybės', 'Vegetariškas'], DRINKS = ['Kokteilis', 'Baltas vynas', 'Šampanas', 'Vietinis alus', 'Be alkoholio'], SEATS = 'ABCD';
+    const esc = t => String(t == null ? '' : t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim();
+    let list = [
+      { name: 'Austėja P. (pavyzdys)', att: 'taip', guests: [{ name: 'Austėja P. (pavyzdys)', meal: 'Jūros gėrybės', drink: 'Kokteilis' }, { name: 'Mindaugas P.', meal: 'Mėsa', drink: 'Vietinis alus' }], note: 'Alergija riešutams' },
+      { name: 'Tomas P. (pavyzdys)', att: 'ne', guests: [], note: '' }];
+    try { const s = JSON.parse(localStorage.getItem(KEY)); if (Array.isArray(s)) list = s; } catch (e) { }
+    const save = () => { try { localStorage.setItem(KEY, JSON.stringify(list)); } catch (e) { } };
+
+    const form = $('rsvp'), yesF = $('yes-fields'), done = $('done'), gl = $('guests'), nameIn = $('f-name');
+    const opt = (arr, v) => arr.map(m => `<option${m === v ? ' selected' : ''}>${m}</option>`).join('');
+    function readGuests() {
+      return [...gl.querySelectorAll('.guest')].map((g, i) => ({ name: i ? g.querySelector('input').value.trim() : nameIn.value.trim(), meal: g.querySelector('.m').value, drink: g.querySelector('.d').value }));
+    }
+    function drawGuests(vals) {
+      const n = +$('f-count').value, cur = vals || readGuests();
+      gl.innerHTML = Array.from({ length: n }, (_, i) => {
+        const g = cur[i] || {};
+        const who = i === 0
+          ? `<span class="gname" id="g0-name">${esc(nameIn.value.trim() || 'Jūs')}</span>`
+          : `<input id="f-g${i}-name" type="text" autocomplete="off" placeholder="Vardas ir pavardė" aria-label="Keliautojas ${i + 1}: vardas" value="${esc(g.name || '')}">`;
+        return `<div class="guest"><span class="seat" aria-hidden="true"><small>VIETA</small><b>2${SEATS[i]}</b></span>${who}` +
+          `<select class="m" id="f-g${i}-meal" aria-label="Keliautojas ${i + 1}: meniu">${opt(MEALS, g.meal)}</select>` +
+          `<select class="d" id="f-g${i}-drink" aria-label="Keliautojas ${i + 1}: gėrimas">${opt(DRINKS, g.drink)}</select></div>`;
+      }).join('');
+    }
+    drawGuests([]);
+    nameIn.addEventListener('input', () => { const el = $('g0-name'); if (el) el.textContent = nameIn.value.trim() || 'Jūs'; });
+    form.addEventListener('change', e => { yesF.hidden = form.att.value !== 'taip'; if (e.target.id === 'f-count') drawGuests(); });
+    function fill(r) { nameIn.value = r.name; form.att.value = r.att; yesF.hidden = r.att !== 'taip'; $('f-count').value = String(Math.max(1, Math.min(4, r.guests.length || 1))); drawGuests(r.guests); $('f-note').value = r.note || ''; }
+    function showDone(r) {
+      form.hidden = true; done.hidden = false; done.classList.toggle('no', r.att !== 'taip');
+      const st = $('stamp'); st.textContent = r.att === 'taip' ? 'PATVIRTINTA' : 'GAILA'; st.style.animation = 'none'; void st.offsetWidth; st.style.animation = ''; foley('stamp');
+      const first = r.name.split(' ')[0], n = r.guests.length;
+      $('done-msg').textContent = r.att === 'taip'
+        ? `Ačiū, ${first}. ${n > 1 ? `Jūsų ${n} vietos patvirtintos.` : 'Jūsų vieta patvirtinta.'} Iki pasimatymo Tailande.`
+        : `Ačiū, kad pranešėte, ${first}. Pasiilgsime.`;
+      const m = $('manifest'); m.hidden = !n;
+      m.innerHTML = r.guests.map((g, i) => `<li><span>2${SEATS[i]}</span><b>${esc(g.name)}</b><em>${esc(g.meal)} · ${esc(g.drink)}</em></li>`).join('');
+    }
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const name = nameIn.value.trim(); $('err').hidden = !!name; if (!name) { nameIn.focus(); return; }
+      const att = form.att.value, yes = att === 'taip', first = name.split(' ')[0];
+      const guests = yes ? readGuests().map((g, i) => ({ name: i ? (g.name || `${first} +${i}`) : name, meal: g.meal, drink: g.drink })) : [];
+      const r = { name, att, guests, note: $('f-note').value.trim(), at: new Date().toISOString() };
+      let me = null; try { me = localStorage.getItem(ME); } catch (e) { }
+      const i = list.findIndex(x => norm(x.name) === norm(name) || (me && norm(x.name) === me)), prev = i >= 0 ? list[i] : null;
+      if (i >= 0) list[i] = r; else list.push(r);
+      try { localStorage.setItem(ME, norm(name)); } catch (e) { }
+      save(); render(); showDone(r); sync(r, prev);
+    });
+    // Hosted copies set window.AV_RSVP = { url, event }; then every answer also goes to the couple's Google Sheet.
+    // The Sheet replaces this person's whole group on a repeat answer, so a retry can't duplicate anything.
+    function sync(r, prev) {
+      const api = window.AV_RSVP, el = $('sync');
+      if (!api || !api.url || !el) return;
+      const show = (t, bad) => { el.hidden = false; el.textContent = t; el.classList.toggle('bad', !!bad); };
+      const okMsg = 'Atsakymas nusiųstas porai ✓', failMsg = 'Nepavyko išsiųsti. Patikrinkite ryšį, spauskite „Pakeisti atsakymą“ ir patvirtinkite dar kartą.';
+      const body = JSON.stringify({
+        event: api.event, party: r.name, note: r.note,
+        replaces: prev && norm(prev.name) !== norm(r.name) ? prev.name : '',
+        guests: r.att === 'taip' ? r.guests.map(g => ({ name: g.name, attending: true, meal: g.meal, drink: g.drink })) : [{ name: r.name, attending: false }]
+      });
+      const opts = { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body };
+      show('Siunčiama porai…');
+      fetch(api.url, opts).then(res => res.json()).then(j => show(j.ok ? okMsg : failMsg, !j.ok),
+        () => fetch(api.url, Object.assign({ mode: 'no-cors' }, opts)).then(() => show(okMsg), () => show(failMsg, true)));
+    }
+    $('again').addEventListener('click', () => { form.hidden = false; done.hidden = true; $('submit').textContent = 'Atnaujinti atsakymą'; nameIn.focus(); });
+    function render() {
+      const yes = list.filter(r => r.att === 'taip'), people = yes.flatMap(r => r.guests);
+      $('rows').innerHTML = list.map(r => `<tr><td>${esc(r.name)}</td><td>${r.att === 'taip' ? 'Atvyks' : 'Negalės'}</td><td>${r.att === 'taip' ? r.guests.map(g => `${esc(g.name)} · ${esc(g.meal)} · ${esc(g.drink)}`).join('<br>') : '—'}</td><td>${esc(r.note)}</td></tr>`).join('');
+      $('s-yes').textContent = yes.length; $('s-no').textContent = list.length - yes.length; $('s-guests').textContent = people.length;
+      $('s-meals').innerHTML = MEALS.map(m => `<span>${m} <b>${people.filter(p => p.meal === m).length}</b></span>`).join('');
+    }
+    render();
+    try { const me = localStorage.getItem(ME), r = me && list.find(x => norm(x.name) === me); if (r) { fill(r); showDone(r); $('submit').textContent = 'Atnaujinti atsakymą'; } } catch (e) { }
+    const gate = () => { $('host').hidden = location.hash !== '#poros'; }; gate(); addEventListener('hashchange', gate);
+    $('csv').addEventListener('click', () => {
+      const q = v => `"${String(v == null ? '' : v).replace(/"/g, '""')}"`;
+      const rows = [['Atsakė', 'Atsakymas', 'Keliautojas', 'Meniu', 'Gėrimas', 'Pastaba']];
+      list.forEach(r => { if (r.att === 'taip') r.guests.forEach((g, i) => rows.push([r.name, 'Atvyks', g.name, g.meal, g.drink, i ? '' : r.note])); else rows.push([r.name, 'Negalės', '', '', '', r.note]); });
+      const csv = rows.map(row => row.map(q).join(',')).join('\n'), m = $('csv-msg');
+      try { navigator.clipboard.writeText(csv).then(() => m.textContent = 'Nukopijuota. Įklijuokite į Google Sheets.', () => m.textContent = 'Naršyklė neleido kopijuoti.'); } catch (e) { m.textContent = 'Naršyklė neleido kopijuoti.'; }
+    });
+  })();
+
+  /* ---------- the opening: seal, flap, passport, twine, cover ---------- */
+  let step = 0;
+  const later = (fn, ms) => setTimeout(fn, reduce ? Math.min(ms, 60) : ms);
+  function openSeal() {
+    if (step) return; step = 1; startMusic();
+    try { navigator.vibrate && navigator.vibrate(14); } catch (e) { }
+    setTimeout(() => foley('coin'), 60); later(() => foley('slide'), 560);
+    stage.classList.add('cracked'); prompt.classList.add('off');
+    later(() => stage.classList.add('flapOpen'), 560);
+    later(() => { passport.tabIndex = 0; $('prompt-text').textContent = 'Palieskite pasą'; prompt.classList.remove('off'); step = 2; }, 2000);
+  }
+  function takePassport() {
+    if (step !== 2) return; step = 3; prompt.classList.add('off');
+    stage.classList.add('focus'); foley('slide');
+    later(() => { passport.classList.add('untied'); foley('pull'); }, 1350);
+    later(() => { passport.classList.add('open'); foley('slide'); }, 2250);
+    later(() => { stage.classList.add('opened'); passport.classList.add('gone'); body.classList.remove('gated'); const j = $('journey'); if (j) j.hidden = false; step = 4; }, 3750);
+  }
+  seal.addEventListener('click', openSeal);
+  passport.addEventListener('click', takePassport);
+  passport.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); takePassport(); } });
+
+  body.classList.add('gated');
+  const journey = $('journey'); if (journey) journey.hidden = true;
+
+  /* shortcut for testing the finished page: #atidaryta */
+  if (location.hash === '#atidaryta') {
+    ['cracked', 'flapOpen', 'risen', 'focus', 'opened'].forEach(c => stage.classList.add(c));
+    ['untied', 'open', 'gone'].forEach(c => passport.classList.add(c));
+    body.classList.remove('gated'); if (journey) journey.hidden = false; step = 4; prompt.classList.add('off');
+  }
+})();
+</script>
+</body>
+</html>
